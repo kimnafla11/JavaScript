@@ -1,0 +1,29 @@
+<!--적정 체중 구하는 테스트-->
+<script>
+    //내가 만든 부분
+    //prompt("질문","초기값");
+    /*var name = prompt("님 이름 뭐임?","");
+    var height = prompt("당신의 키는?","0");
+    var weight = prompt("당신의 몸무게는?","0");
+    
+    var result = (height-100)*0.9;//적정체중
+
+    if(weight>result){
+        document.write(name,"님 적정체중은 ",result,"kg 이며, 현재 적청체중에서 ",weight-result," 초과 하였습니다. 살 좀 빼시길ㅋㅋ^^");
+    }else if(weight<result){
+        document.write(name,"님 적정체중은 ",result,"kg 이며, 현재 적청체중에서 ",result-weight," 모자라네여.. 뭐 좀 먹으세요");
+    }else{
+        document.write(name,"님 적정체중은 ",result,"kg 이며, 현재 적청체중입니다 ㅊㅋㅊㅋ");
+    }*/
+
+    var name = prompt("고객님 성함이요?^^");
+    var height = prompt("키가 어떻게되세요?","0");
+    var weight = prompt("몸무게를 알려주시겠어요??","0");
+
+    var nomal = (height-100)*0.9;//적정체중
+
+    var result = weight >= nomal-5 && weight <= nomal+5;//오차범위 5이며 두개의 조건식이 t여야 t가됨
+    result = result? "적정체중이네요 ㅋ 좋습니다":"적정체중이 아니네여 ";//t면 적정체중출력 f면 적정체중 아니라고 출력
+    
+    document.write(name+"님 ", result,"적정체중은 ",nomal,"입니다.");
+</script>

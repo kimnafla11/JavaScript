@@ -1,0 +1,14 @@
+<!--평균 판매량구하고 4분기 판매량을 입력하여 평균판매량의 이상/미달 값 출력하기-->
+<script>
+    var fourthSales = Number(prompt("4분기 판매량을 입력하세요",0));//prompt를 사용하여 숫자값 입력받음
+    var firstSales = 1200;
+    var secondSales = 1300;
+    var thirdSales = 1000;//데이터 입력
+    var average = (firstSales+secondSales+thirdSales)/3;//평균값 입력
+
+    var result = fourthSales>=average;
+    result = result?"평균판매량 이상":"평균판매량보다 이하";
+
+    document.write(result);
+    //result에 평균값과 입력한 값의 차를 넣어서 출력하고 싶은데 에러나는거 어떻게 해결할지 이야기해보기
+</script>

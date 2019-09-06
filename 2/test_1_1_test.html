@@ -1,0 +1,25 @@
+<!--삼항조건 연산자를 이용하여
+    적정비용 10000원 초과 했을때 "000원 초과"라는 말 뜨게,
+    아니면 "돈 관리 잘했어요"뜨게-->
+<script>
+    var num1 = Number(prompt("1 얼마 썼음?",0));
+    var num2 = Number(prompt("2 얼마 썼음?",0));
+    var num3 = Number(prompt("3 얼마 썼음?",0));
+
+    var sum1 = num1+num2+num3;
+    result1 = sum1>10000;
+    result1 = result1? sum1-10000+"원 초과했습니다.":sum1+"원을 지출하셨네요 잘하셨습니다.";
+    document.write(result1);
+
+/*
+    var price1 = 3000;
+    var price2 = 6000;
+    var price3 = 3000;
+
+    var sum = price1+price2+price3;
+
+    var result = sum>10000;//결과가 10000이 넘으면 f
+    result = result? sum-10000+ "원 초과":"돈관리 잘했어요";
+    document.write(result);*/
+    
+</script>
