@@ -1,0 +1,19 @@
+<!--5행 5열 표 만들고 데이터가 1부터 25까지 출력되도록 작성하기-->
+<script>
+    var num = 1;//num의 초기값 1
+    var t ="<table border = 1>";//t에는 table을 생성함
+        for(var i =1; i<=5;i++){//for문에서 바로 변수를 선언해서 증감식 사용 가능함
+            t +="<tr>";//행을 하나 만듦
+            
+            for(var k =1; k<=5; k++){//k를 5까지 반복해야 5개의 열이 생김
+                t+="<td>"+num+"</td>";//td태그 속에 num을 넣음
+                num++;//num을 1 씩 증가시킴
+            }
+
+            t +="</tr>";
+        }
+
+    t += "</table>";
+    console.log(t);//??이건 잘 모르곘음
+    document.write(t);//t를 출력함
+</script>

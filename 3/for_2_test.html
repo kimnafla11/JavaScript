@@ -1,0 +1,11 @@
+<script>
+    for(var i = 1; i<=100;i++){
+        if(i%5==0 && i%7 !=0){//i가 5의 배수이며 7의 배수가 아닐 때 실행
+            document.write("<p class='red'>"+i+"</p>");
+        }else if(i % 7 ==0 && i%5 !=0){//i가 7의 배수이며 5의 배수가 아닐 때 실행
+        document.write("<p class='green'>"+i+"</p>");
+        }else if(i %7 == 0 && i%5 ==0){//i가 7의 배수이고 5의 배수일때 실행
+            document.write("<p class='aqua'>"+i+"</p>");
+        }
+    }
+</script>

@@ -1,0 +1,20 @@
+<script>
+    var site = prompt("네이버 다음 네이트 구글 중\
+    즐겨 사용하는 포털검색 사이트는?","");//역슬래시 넣으면 줄 바꿈 해도 오류 안남
+    var url;//url 변수 선언
+
+    switch(site){//switch에 변수는 site
+        case "구글": url = "www.google.com";//값이 구글 일때 url변수에 구글 url대입
+        break;
+        case "다음": url = "www.daum.net";
+        break;
+        case "네이트": url = "www.nate.com";
+        break;
+        case "네이버" : url = "www.naver.com";
+        break;
+        default: alert("보기 중에 없는 사이트입니다");
+    }
+
+    if (url) location.href="http://"+url;//if문 url에 값이 존재 하면 하이퍼링크를 타고 이동함
+
+</script>
