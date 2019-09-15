@@ -1,0 +1,56 @@
+<script>
+    var today = new Date();//date객체 생성
+    var nowMonth = today.getMonth()+1,//today객체에서 getMonth()를 호출하여 +1함
+    nowDate = today.getDate(),//today객체에서 getDate()를 호출
+    nowDay = today.getDay();
+
+    switch (nowDay){
+        case 0: nowDay = "일";
+        break;
+        case 1: nowDay = "월";
+        break;
+        case 2: nowDay = "화";
+        break;
+        case 3: nowDay = "수";
+        break;
+        case 4: nowDay = "목";
+        break;
+        case 5: nowDay = "금";
+        break;
+        case 6: nowDay = "토";
+        break;
+    }
+
+    document.write("<h1>오늘 날짜 정보</h1>");
+    document.write("현재 월: "+nowMonth,"<br>");
+    document.write("현재 일: "+nowDate,"<br>");
+    document.write("현재 요일: "+nowDay,"<br>");
+
+    var mybrith = new Date(1995,5,10);//지정한 날짜로 날짜객체 생성
+    document.write(mybrith,"<br>");
+    var theMonth = mybrith.getMonth()+1,//지정한 날짜의 getMonth는 +1할 필요 없음
+    theDate = mybrith.getDate(),
+    theDay = mybrith.getDay();
+
+    switch (theDay){
+        case 0: theDay = "일";
+        break;
+        case 1: theDay = "월";
+        break;
+        case 2: theDay = "화";
+        break;
+        case 3: theDay = "수";
+        break;
+        case 4: theDay = "목";
+        break;
+        case 5: theDay = "금";
+        break;
+        case 6: theDay = "토";
+        break;
+    }
+
+    document.write("<h1>내 생일 정보</h1>");
+    document.write("내 생일 몇 월: "+theMonth,"<br>");
+    document.write("내 생일 몇 일: "+theDate,"<br>");
+    document.write("내 생일 무슨 요일: "+theDay,"<br>");
+</script>

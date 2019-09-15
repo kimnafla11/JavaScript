@@ -1,0 +1,21 @@
+<script>
+    var userEmail = prompt("당신의 이메일 주소는?","");
+    var arrUrl = ["co.kr","com",".net",".or.kr",".go.kr"];
+
+    var check1 = false;//초기값 설정
+    var check2 = false;
+
+    if(userEmail.indexOf("@")>0){check1 = true;}//indexOf("@"), 즉 골뱅이가 써져 있어야 하며 골뱅이 앞에 뭐가 쓰여있으면 0보다 큰 값
+
+    for(var i = 0; i<arrUrl.length;i++){//arrUrl 횟수만큼 반복
+        if(userEmail.indexOf(arrUrl[i])>0){//uerEmail에 arrUrl이 있으며 arrUrl앞에 뭐가 쓰여 있으면 0보다 큰 값
+            check2 = true;
+        }
+    }
+
+    if(check1 && check2){//둘다 true이면
+        document.write(userEmail);//이메일을 출력함
+    }else{
+        alert("이메일 형식이 잘못되었습니다.");
+    }
+</script>

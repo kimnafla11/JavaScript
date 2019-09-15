@@ -1,0 +1,16 @@
+<script>
+    var greenArr = ["교대","방배","강남"];
+    var yellowArr = ["미금","정자","수서"];
+
+    greenArr.splice(2,1,"서초","역삼");//index2번에 1개의 데이터를 삭제하고 서초 역삼 삽입
+    console.log(greenArr);
+
+    var data1 = yellowArr.pop();//수서 삭제후 data1에 저장
+    var data2 = yellowArr.shift();//미금 삭제후 data2에 저장
+
+    yellowArr.push(data2);//data2를 yellowArr뒤에 삽입 [정자][미금]
+    console.log(yellowArr);
+
+    yellowArr.unshift(data1);//data1를 yellowArr앞에 삽입 [수서][정자][미금]
+    console.log(yellowArr);
+</script>

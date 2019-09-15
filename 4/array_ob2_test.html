@@ -1,0 +1,19 @@
+<script>
+    var arr_1 = ["사당","교대","방배","강남"];
+    var arr_2 = ["송도","구월","부평"];
+
+    var result = arr_1.join("-");//배열사이에 -문자를 연결하여 하나의 문자열로 변환
+    console.log(result);
+
+    result = arr_1.concat(arr_2);//두개의 배열을 하나로 합침
+    console.log(result);
+
+    result = arr_1.slice(1,3);//index1번과 3번 사이의 데이터만 [교대,방베]
+    console.log(result);
+
+    arr_1.sort();//오름차순으로 정렬
+    console.log(arr_1);
+
+    arr_2.reverse();//뒤집어 정렬
+    console.log(arr_2);
+</script>

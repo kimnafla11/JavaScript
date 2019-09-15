@@ -1,0 +1,10 @@
+<script>
+    var userName = prompt("당신의 영문 이름은?","");
+
+    var upperName = userName.toUpperCase();//모두 대문자로 전환시킴
+    document.write(upperName,"<br>");
+
+    var userNum = prompt("당신의 연락처는?","");
+    var result = userNum.substring(0,userNum.length-4)+"****";//인덱스번호 0번부터 전화번호길이-4부분을 출력한후 ****출력
+    document.write(result,"<br>");
+</script>

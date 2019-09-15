@@ -1,0 +1,23 @@
+<script>
+    var tv = new Object();//객체 생성 함수
+    tv.color = "white";//tv객체 color속성에 white저장
+    tv.price = 300000;
+    tv.info = function(){//tv객체 info속성에 function함수 저장
+        document.write("tv색상: " + this.color,"<br>");//this는 메서드의 객체를 가리킴
+        document.write("tv가격: "+ this.price,"<br>");
+    }
+
+    var car = {//car라는 객체 생성
+        color : "black",//color속성 black으로 저장 이떄 :,를 사용함
+        price : 5000000,
+        info: function(){//car 객체 info속성에 function함수 저장
+            document.write("car 색상: "+ this.color,"<br>");
+            document.write("car 가격: "+ this.price,"<br>");
+        }
+    };
+
+    document.write("<h1>tv 객체 메서드 호출</h1>");
+    tv.info();//tv객체의 info함수 호출
+    document.write("<h1>car 객체 메서드 호출</h1>");
+    car.info();//car객체의 info함수 호출
+</script>
