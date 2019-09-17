@@ -27,7 +27,6 @@
     document.write("현재 요일: "+nowDay,"<br>");
 
     var mybrith = new Date(1995,5,10);//지정한 날짜로 날짜객체 생성
-    document.write(mybrith,"<br>");
     var theMonth = mybrith.getMonth()+1,//지정한 날짜의 getMonth는 +1할 필요 없음
     theDate = mybrith.getDate(),
     theDay = mybrith.getDay();
@@ -50,6 +49,7 @@
     }
 
     document.write("<h1>내 생일 정보</h1>");
+    document.write(mybrith,"<br>");
     document.write("내 생일 몇 월: "+theMonth,"<br>");
     document.write("내 생일 몇 일: "+theDate,"<br>");
     document.write("내 생일 무슨 요일: "+theDay,"<br>");

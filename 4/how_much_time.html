@@ -1,0 +1,30 @@
+<script>
+    var theYear = prompt("기준 년?","");
+    var theMonth = prompt("기준 월?","");
+    var theDate = prompt("기준 일?","");
+
+    theYear = Number(theYear);
+    theMonth = Number(theMonth);
+    theDate = Number(theDate);
+
+    var theDay = new Date(theYear,theMonth-1,theDate);
+
+    var someYear = prompt("지정 년?","");
+    var someMonth = prompt("지정 월?","");
+    var someDate = prompt("지정 일?","");
+
+    someYear = Number(someYear);
+    someMonth = Number(someMonth);
+    someDate = Number(someDate);
+
+    var someDay = new Date(someYear,someMonth,someDate);
+
+    var diffDay = someDay.getTime()-theDay.getTime();
+
+    var result = Math.ceil(diffDay/(60*1000*60*24));
+
+    document.write("지정일까지 ",result,"일 남았습니다.");
+
+    var today = new Date();
+
+</script>

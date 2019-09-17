@@ -1,0 +1,19 @@
+<script>
+    var theYear = prompt("기준 년?","2017");
+    var theMonth = prompt("기준 월?","08");
+    var theDate = prompt("기준 일?","27");
+
+    theYear = Number(theYear);
+    theMonth = Number(theMonth);
+    theDate = Number(theDate);
+
+    var dayday = new Date(theYear,theMonth-1,theDate);
+    document.write(dayday,"<br>");
+
+
+    var today = new Date();
+    var diffDay = today.getTime()-dayday.getTime();
+
+    var result = Math.ceil(diffDay/(60*1000*60*24));
+    document.write("오늘 만난지 ",result,"일째입니다.");
+</script>
