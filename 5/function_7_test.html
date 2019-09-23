@@ -1,0 +1,11 @@
+<script>
+    var num = 0;
+    function testFnc(){
+        num++;
+        document.write(num,"<br>");
+        if(num == 10) return;//num값이 10이 되면 return에 들어가서 함수 종류
+
+        testFnc();//재귀함수 호출문을 삽입하여 반복하여 호출
+    }
+        testFnc();//함수 호출
+</script>

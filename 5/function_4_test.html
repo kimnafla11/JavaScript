@@ -1,0 +1,18 @@
+<script>
+    var rightId = "po02026";
+    var rightPw = "1234";
+    function login(id,pw){
+        if(id == rightId){
+            if(pw == rightPw){
+                document.write(id+"님 방문을 환영합니다.");
+            }else{
+                alert("잘못된 비밀번호");
+            }
+        }else{
+            alert("존재하지 않는 ID");
+        }
+    }
+    var userId = prompt("id를 입력하세여");//값을 받아 변수에 저장
+    var userPw = prompt("비밀번호를 입력");
+    login(userId, userPw);//저장한 변수를 함수에 매개변수로 넣고 함수 호출
+</script>

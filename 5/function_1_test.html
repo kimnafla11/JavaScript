@@ -1,0 +1,19 @@
+<script>
+    var count = 0;
+
+    myFnc();//호출문이 먼저 나와도 호이스팅 방식으로 출력 됨
+
+    function myFnc(){
+        count++;
+        document.write("hello", count,"<br>");
+    }
+
+    myFnc();//그 다음 호출 2가 출력
+
+    var theFnc = function(){//theFnc 함수를 정의하고 
+        count++;
+        document.write("bye",+count,"<br>");
+    }
+
+    theFnc();//theFnc함수 실행 3출력
+</script>
