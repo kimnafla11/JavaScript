@@ -1,0 +1,17 @@
+<script>
+    var sub1 = Number(prompt("국어 점수는?",""));
+    var sub2 = Number(prompt("수학 점수는?",""));
+    var sub3 = Number(prompt("영어 점수는?",""));
+    bochung();
+
+    function bochung(){
+        var avg = (sub1+sub2+sub3)/3;
+
+        if (avg<=50 || sub2<=50){
+            document.write("보충수업 대상자 입니다.");
+        }else{
+            document.write("보충수업 대상자 ㄴㄴ");
+        }
+    }
+
+</script>

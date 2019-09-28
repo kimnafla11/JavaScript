@@ -1,0 +1,36 @@
+<script>
+    function CheckWeight(name, height, weight){
+        this.userName = name;
+        this.userHeight = height;
+        this.userWeight = weight;//객체에 userWeight라는 변수를 만들고 매개변수값 저장
+        this.minWeight;
+        this.maxWeight;
+        this.getInfo = function(){//getInfo라는 익명함수 생성
+            var str = "";
+            str += "이름 : "+this.userName +"<br>";
+            str += "키 : "+this.userHeight +"<br>";
+            str += "몸무게 : "+this.userWeight+"<br>";
+            return str;//값을 str에 저장하고 함수 종료
+        }
+        this.getResult = function(){//getResult 익명함수 생성
+            this.minWeight = (this.userHeight - 100)*0.9-5;
+            this.maxWeight = (this.userHeight-100)*0.9+5;
+
+            if(this.userWeight>=this.minWeight&&this.userWeight<=this.maxWeight){
+                return "정상몸무게입니다";
+            }else if(this.userWeight<this.minWeight){
+                return "몸무게 미달";
+            }else{
+                return "돼지";
+            }
+        }
+    }
+
+    var jang = new CheckWeight("장보리",168,62);
+    var park = new CheckWeight("박달재",180,88);
+    console.log(jang);
+    console.log(park);
+
+    document.write(jang.getInfo());
+    document.write(jang.getResult());
+</script>

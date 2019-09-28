@@ -1,0 +1,21 @@
+<script>
+    //즉시실행함수
+(function(){//즉시실행함수를 만들고 menu()라는 같은 이름의 함수를 만듦
+    var num = 100;
+    function menu(){
+        num += 100;
+        alert(num);
+    }
+    menu();//200출력 지역함수이기때문에 즉시실행함수 스코프 내에 함수를 호출해야함
+}());
+
+(function(){
+    var num = 100;
+    function menu(){
+        alert(num);
+    }
+    menu();//지역함수를 호출하기위해서 즉시 실행 함수 스코프 내에서 함수를 호출 // 100출력
+}());
+
+menu();//밖에서 호출하면 출력 x
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+    var korea = Number(prompt("국어 점수는?",""));
+    var English = Number(prompt("영어 점수는?",""));
+    var math = Number(prompt("수학 점수는?",""));
+
+    function kem(){
+        var kemAvg = (korea+English+math)/3;
+        if(kemAvg <= 50){
+            document.write("보충수업 대상자입니다.");
+        }
+    }
+    kem();
+
+    
+</script>
+</head>
+<body>
+
+</body>
+</html>

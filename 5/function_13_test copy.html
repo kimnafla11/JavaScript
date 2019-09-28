@@ -1,0 +1,26 @@
+<script>
+    function TestScore(name,kor,eng){//객체생성함수 만듦
+        this.userName = name;//userName변수에 저장함
+        this.korNum = kor;
+        this.engNum = eng;
+    }
+    TestScore.prototype.getTestInfo = function(){//프로토타입 메서드 만듦
+        var str = "";
+        str += "이름 : "+this.userName+"<br>";
+        str += "국어 : "+this.korNum+"<br>";
+        str += "영어 : "+this.engNum+"<br>";
+        document.write(str);
+    }
+    TestScore.prototype.getAvg = function(){
+        return (this.korNum+this.engNum)/2;
+    }
+
+    var kimna = new TestScore("김나은",80,90);
+    var chea = new TestScore("이채빈",100,80);
+
+    kimna.getTestInfo();
+    document.write("평균점수 : "+kimna.getAvg(),"<br><br>");
+    
+    chea.getTestInfo();
+    document.write("평균점수 : "+chea.getAvg(),"<br><br>");
+</script>

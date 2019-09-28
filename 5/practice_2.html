@@ -1,0 +1,47 @@
+<!--<script>
+    var sub1 = Number(prompt("국어 점수는?",""));
+    var sub2 = Number(prompt("수학 점수는?",""));
+    var sub3 = Number(prompt("영어 점수는?",""));
+
+    function bochung(){
+        var avg = (sub1+sub2+sub3)/3;
+
+        if (sub1<=50 && sub2<=50 && sub3 <=50){
+            var jong = "종합반";
+            return jong;
+        }else if(sub1<=50 || sub2<=50 ||sub3 <=50){
+            var dan = "단과반";
+            return dan;
+        }else{
+            var none = "보충수업없음";
+            return none;
+        }
+    }
+    var result = bochung();
+    document.write(result);
+
+</script>-->
+
+<script>
+    function bochung(num1, num2, num3){
+        var avg = (num1, num2, num3)/3;
+
+        if (sub1<=50 && sub2<=50 && sub3 <=50){
+            var jong = "종합반";
+            return jong;
+        }else if(sub1<=50 || sub2<=50 ||sub3 <=50){
+            var dan = "단과반";
+            return dan;
+        }else{
+            var none = "보충수업없음";
+            return none;
+        }
+    }
+
+    var sub1 = Number(prompt("국어 점수는?",""));
+    var sub2 = Number(prompt("수학 점수는?",""));
+    var sub3 = Number(prompt("영어 점수는?",""));
+    var result = bochung(sub1, sub2, sub3);
+    document.write(result);
+
+</script>

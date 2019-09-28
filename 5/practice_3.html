@@ -1,0 +1,15 @@
+<script>
+    var year = Number(prompt("년도를 입력하세요",""));
+    function yoon(){
+        if(year%4 == 0){
+            if(year % 100 ==0 && (year%400!==0)){
+                document.write(false);
+            }else{
+                document.write(true);
+            }
+        }else{
+            document.write(false);
+        }
+    }
+    yoon(year);
+</script>
